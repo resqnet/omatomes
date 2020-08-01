@@ -4,7 +4,6 @@ module.exports = {
     es2020: true,
   },
   extends: [
-    // "airbnb",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
@@ -15,9 +14,19 @@ module.exports = {
   ],
   plugins: ["react", "@typescript-eslint"],
   rules: {
+    "react/prop-types": "off",
+    "@typescript-eslint/no-empty-function": [
+      "error",
+      { allow: ["arrowFunctions"] },
+    ],
     "react/jsx-filename-extension": [
       1,
       { extensions: [".js", ".jsx", ".tsx"] },
     ],
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
   },
 };

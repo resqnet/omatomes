@@ -5,9 +5,9 @@ import Link from "next/link";
 const HelloWorld: React.FC = () => {
   return (
     <>
-      <HTag>Hello, Next.js!</HTag>
-      <Link href="/about">
-        <a>About</a>
+      <HTag>About!</HTag>
+      <Link href="/">
+        <a>Home</a>
       </Link>
     </>
   );

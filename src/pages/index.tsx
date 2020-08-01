@@ -1,7 +1,10 @@
 import * as React from "react";
+import styled from "@emotion/styled";
 
 const HelloWorld: React.FC = () => {
-  return <h1>Hello, Next.js!</h1>;
+  return <HTag>Hello, Next.js!</HTag>;
 };
+
+const HTag = styled.h1``;
 
 export default HelloWorld;

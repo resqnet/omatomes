@@ -1,0 +1,3 @@
+# Omatomes
+blog template
+
